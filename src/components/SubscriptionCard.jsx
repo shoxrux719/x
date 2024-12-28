@@ -1,68 +1,31 @@
 import React, { PureComponent } from 'react';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-// const data = [
-//   { name: "itbilim.academy", summa: "1903" },
-//   { name: "itacademy", summa: 12695 },
-//   { name: "itstep", summa: 16411 },
-//   { name: "kadirovdev", summa: "25728" },
-//   { name: "astrum", summa: 26387 },
-//   { name: "mohirdev", summa: 36214 },
-//   { name: "spaceacademy", summa: 38240 },
-//   { name: "letsanimate", summa: 42956 },
-//   { name: "pdp", summa: 48128 },
-//   { name: "ustudy", summa: 53271 },
-//   { name: "proweb", summa: 59138 },
-//   { name: "haad", summa: 74257 },
-//   { name: "najottalim", summa: 150752 },
-//   { name: "tehnikum", summa: 256198 },
-// ];
-
 const data = [
-  {
-    name: "Najot Ta'lim",
-    uv: 1000,
-    "O'quvchilar soni": 2400,
-    "1 oylik to'lov": "240.033",
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    "O'quvchilar soni": 1398,
-    "1 oylik to'lov": 2210,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    "O'quvchilar soni": 9800,
-    "1 oylik to'lov": 2290,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    "O'quvchilar soni": 3908,
-    "1 oylik to'lov": 2000,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    "O'quvchilar soni": 4800,
-    "1 oylik to'lov": 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    "O'quvchilar soni": 3800,
-    "1 oylik to'lov": 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    "O'quvchilar soni": 4300,
-    "1 oylik to'lov": 2100,
-  },
+  { name: "Najot Ta'lim", "1 oylik to'lov": "1.500.000" },
+  { name: "Astrum", "1 oylik to'lov": "2.500.000" },
+  { name: "PDP", "1 oylik to'lov": "1.000.000" },
+  { name: "UStudy", "1 oylik to'lov": '2.000.000' },
+  { name: "HAAD LC", "1 oylik to'lov": '1.000.000' },
+  { name: "IT Bilim", "1 oylik to'lov": "1.500" },
+  { name: "IT Academy", "1 oylik to'lov": '1.500' },
+  { name: "IT Step", "1 oylik to'lov": '1.500' },
+  { name: "Kadirov Dev", "1 oylik to'lov": "1.500" },
+  { name: "MohirDev", "1 oylik to'lov": '1.500' },
+  { name: "S.A.", "1 oylik to'lov": '1.500' },
+  { name: "Let's Animate", "1 oylik to'lov": '1.500' },
+  { name: "ProWeb", "1 oylik to'lov": '1.500' },
+  { name: "Tehnikum", "1 oylik to'lov": '1.500' },
 ];
 
+const formattedData = data.map(item => ({
+  ...item,
+  "1 oylik to'lov": parseFloat(item["1 oylik to'lov"].replace(/\./g, '').replace(',', '.')),
+}));
+
+const formatNumber = (num) => {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + " so'm";
+};
 
 const SubscriptionCard = () => {
   return (
@@ -70,12 +33,12 @@ const SubscriptionCard = () => {
       <h3 className="text-center text-xl font-bold mb-4">
         Рейтинг учебных центров (по сумме показателей)
       </h3>
-      <div style={{ height: 400 }}>
+      <div style={{ height: 400, width: "100%" }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            width={500}
+            width={800}
             height={300}
-            data={data}
+            data={formattedData}
             margin={{
               top: 5,
               right: 30,
@@ -86,9 +49,9 @@ const SubscriptionCard = () => {
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
             <YAxis />
-            <Tooltip />
+            <Tooltip formatter={(value) => formatNumber(value)} />
             <Legend />
-            <Bar dataKey="1 oylik to'lov" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+            <Bar allowDecimals={true} type='number' dataKey="1 oylik to'lov" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
           </BarChart>
         </ResponsiveContainer>
       </div>

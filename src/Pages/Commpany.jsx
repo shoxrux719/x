@@ -8,10 +8,10 @@ const Commpany = () => {
       <h1 className="text-center text-3xl font-bold text-black dark:text-white mb-10">
         Аналитика
       </h1>
+      <SubscriptionCard />
       <div className="grid grid-cols-2 gap-8">
         {/* Рейтинг учебных центров */}
         <div className="bg-black rounded-xl shadow-md shadow-[#8157ff]">
-          <SubscriptionCard  />
         </div>
 
         {/* Количество подписчиков */}
