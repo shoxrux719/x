@@ -22,54 +22,91 @@ const data = [
   {
     name: "Najot Ta'lim",
     uv: 1000,
-    "O'quvchilar soni": 2400,
+    "O'quvchilar soni": "2500",
     "1 oylik to'lov": "240.033",
   },
   {
-    name: 'Page B',
+    name: '',
     uv: 3000,
-    "O'quvchilar soni": 1398,
+    "O'quvchilar soni": 500,
     "1 oylik to'lov": 2210,
   },
   {
     name: 'Page C',
     uv: 2000,
-    "O'quvchilar soni": 9800,
+    "O'quvchilar soni": 300,
     "1 oylik to'lov": 2290,
   },
   {
     name: 'Page D',
     uv: 2780,
-    "O'quvchilar soni": 3908,
+    "O'quvchilar soni": 300,
     "1 oylik to'lov": 2000,
   },
   {
     name: 'Page E',
     uv: 1890,
-    "O'quvchilar soni": 4800,
+    "O'quvchilar soni": 1000,
     "1 oylik to'lov": 2181,
   },
   {
     name: 'Page F',
     uv: 2390,
-    "O'quvchilar soni": 3800,
+    "O'quvchilar soni": 300,
     "1 oylik to'lov": 2500,
   },
   {
     name: 'Page G',
     uv: 3490,
-    "O'quvchilar soni": 4300,
+    "O'quvchilar soni": 600,
     "1 oylik to'lov": 2100,
   },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 2000,
+    "1 oylik to'lov": 2100,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 500,
+    "1 oylik to'lov": 2100,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 1500,
+    "1 oylik to'lov": 2100,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 1200,
+    "1 oylik to'lov": 2100,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 400,
+    "1 oylik to'lov": 2100,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 2000,
+    "1 oylik to'lov": 2100,
+  },
+
 ];
 
 
-const SubscriptionCard = () => {
+const NumberOfSubscribers = () => {
   return (
     <div className="bg-black text-white p-4 rounded-lg shadow-lg">
       <h3 className="text-center text-xl font-bold mb-4">
-         Учебных центров (по сумме показателей)
-      </h3>
+      Количество учеников 
+      учебных центров       </h3>
       <div style={{ height: 400 }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -88,7 +125,7 @@ const SubscriptionCard = () => {
             <YAxis />
             <Tooltip />
             <Legend />
-            <Bar dataKey="1 oylik to'lov" fill="#1E90FF " activeBar={<Rectangle fill="white" stroke="purple" />} />
+            <Bar dataKey="O'quvchilar soni" fill="#1E90FF " activeBar={<Rectangle fill="white" stroke="purple" />} />
           </BarChart>
         </ResponsiveContainer>
       </div>
@@ -96,4 +133,4 @@ const SubscriptionCard = () => {
   );
 };
 
-export default SubscriptionCard;
+export default NumberOfSubscribers;

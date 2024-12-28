@@ -1,5 +1,6 @@
 import React from "react";
 import SubscriptionCard from "../components/SubscriptionCard";
+import NumberOfSubscribers from "../components/NumberOfSubscribers";
 
 
 const Commpany = () => {
@@ -15,15 +16,8 @@ const Commpany = () => {
         </div>
 
         {/* Количество подписчиков */}
-        <div className="bg-black p-6 rounded-xl shadow-xl shadow-[#8157ff]">
-          <h2 className="text-center text-black dark:text-white text-lg font-semibold mb-4">
-            Количество подписчиков <br /> учебных центров
-          </h2>
-          <img
-            src="/public/img/Снимок экрана 2024-12-04 234049.png"
-            alt="Количество подписчиков"
-            className="w-full h-auto rounded-lg"
-          />
+        <div className="bg-black  rounded-xl shadow-xl shadow-[#8157ff]">
+         <NumberOfSubscribers />
         </div>
 
         {/* Количество публикаций (всего) */}
