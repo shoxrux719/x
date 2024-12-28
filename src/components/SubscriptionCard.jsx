@@ -30,9 +30,9 @@ const SubscriptionCard = () => {
   return (
     <div className="bg-black text-white p-4 rounded-lg shadow-lg">
       <h3 className="text-center text-xl font-bold mb-4">
-        Рейтинг учебных центров (по сумме показателей)
+         Учебных центров (по сумме показателей)
       </h3>
-      <div className="w-[] h-[]">
+      <div className="w-full h-full">
         <ResponsiveContainer>
           <BarChart
             layout="vertical"
