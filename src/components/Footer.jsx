@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-custom-gradient-light text-white w-full px-[135px] pb-[70px] py-8">
+      <footer className="bg-black text-white w-full px-[135px] pb-[70px] py-8">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-4">
           {/* Раздел "Murojaat uchun" */}
           <div className="mb-6 md:mb-0">

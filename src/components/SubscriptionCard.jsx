@@ -1,30 +1,68 @@
-import React from "react";
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import React, { PureComponent } from 'react';
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+// const data = [
+//   { name: "itbilim.academy", summa: "1903" },
+//   { name: "itacademy", summa: 12695 },
+//   { name: "itstep", summa: 16411 },
+//   { name: "kadirovdev", summa: "25728" },
+//   { name: "astrum", summa: 26387 },
+//   { name: "mohirdev", summa: 36214 },
+//   { name: "spaceacademy", summa: 38240 },
+//   { name: "letsanimate", summa: 42956 },
+//   { name: "pdp", summa: 48128 },
+//   { name: "ustudy", summa: 53271 },
+//   { name: "proweb", summa: 59138 },
+//   { name: "haad", summa: 74257 },
+//   { name: "najottalim", summa: 150752 },
+//   { name: "tehnikum", summa: 256198 },
+// ];
 
 const data = [
-  { name: "itbilim.academy", value: "1903" },
-  { name: "itacademy", value: 12695 },
-  { name: "itstep", value: 16411 },
-  { name: "kadirovdev", value: "25728" },
-  { name: "astrum", value: 26387 },
-  { name: "mohirdev", value: 36214 },
-  { name: "spaceacademy", value: 38240 },
-  { name: "letsanimate", value: 42956 },
-  { name: "pdp", value: 48128 },
-  { name: "ustudy", value: 53271 },
-  { name: "proweb", value: 59138 },
-  { name: "haad", value: 74257 },
-  { name: "najottalim", value: 150752 },
-  { name: "tehnikum", value: 256198 },
+  {
+    name: "Najot Ta'lim",
+    uv: 1000,
+    "O'quvchilar soni": 2400,
+    "1 oylik to'lov": "240.033",
+  },
+  {
+    name: 'Page B',
+    uv: 3000,
+    "O'quvchilar soni": 1398,
+    "1 oylik to'lov": 2210,
+  },
+  {
+    name: 'Page C',
+    uv: 2000,
+    "O'quvchilar soni": 9800,
+    "1 oylik to'lov": 2290,
+  },
+  {
+    name: 'Page D',
+    uv: 2780,
+    "O'quvchilar soni": 3908,
+    "1 oylik to'lov": 2000,
+  },
+  {
+    name: 'Page E',
+    uv: 1890,
+    "O'quvchilar soni": 4800,
+    "1 oylik to'lov": 2181,
+  },
+  {
+    name: 'Page F',
+    uv: 2390,
+    "O'quvchilar soni": 3800,
+    "1 oylik to'lov": 2500,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    "O'quvchilar soni": 4300,
+    "1 oylik to'lov": 2100,
+  },
 ];
+
 
 const SubscriptionCard = () => {
   return (
@@ -32,31 +70,25 @@ const SubscriptionCard = () => {
       <h3 className="text-center text-xl font-bold mb-4">
         Рейтинг учебных центров (по сумме показателей)
       </h3>
-      <div className="w-[] h-[]">
-        <ResponsiveContainer>
+      <div style={{ height: 400 }}>
+        <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            layout="vertical"
+            width={500}
+            height={300}
             data={data}
-            margin={{ top: 20, right: 30, left: 100, bottom: 20 }}
+            margin={{
+              top: 5,
+              right: 30,
+              left: 20,
+              bottom: 5,
+            }}
           >
-            <CartesianGrid strokeDasharray="3 3" stroke="#444" />
-            <XAxis type="number" tick={{ fill: "#fff" }} />
-            <YAxis
-              type="category"
-              dataKey="name"
-              tick={{ fill: "#fff" }}
-              width={20}
-            />
-            <Tooltip
-              cursor={{ fill: "#333" }}
-              contentStyle={{ backgroundColor: "#222", borderColor: "#444" }}
-            />
-            <Bar
-              dataKey="value"
-              fill="#ff7f7f"
-              barSize={20}
-              radius={[0, 10, 10, 0]}
-            />
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="1 oylik to'lov" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
           </BarChart>
         </ResponsiveContainer>
       </div>
