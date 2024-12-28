@@ -499,3 +499,51 @@
     transform: translateX(calc(var(--slideWidth) * var(--totSlides) * -1));
   }
 }
+
+.menu-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s forwards;
+}
+
+.menu-item:nth-child(1) { animation-delay: 0.1s; }
+.menu-item:nth-child(2) { animation-delay: 0.2s; }
+.menu-item:nth-child(3) { animation-delay: 0.3s; }
+.menu-item:nth-child(4) { animation-delay: 0.4s; }
+.menu-item:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+:root {
+  --line-color: black; /* Цвет линии для light mode */
+}
+
+[data-theme="dark"] {
+  --line-color: white; /* Цвет линии для dark mode */
+}
+
+.menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Толщина линии */
+  background-color: var(--line-color); /* Используем переменную цвета */
+  transition: width 0.3s ease;
+}
+
+.menu-item:hover::after {
+  width: 100%; /* Линия растягивается до полного размера текста */
+}

@@ -1,4 +1,4 @@
-import { Input, Button as AntButton, Form } from 'antd'; // Импортируем Button и Form из Ant Design
+import { Input, Button as AntButton, Form, Select } from 'antd'; // Импортируем Button и Form из Ant Design
 import React from 'react';
 
 const onFinish = (values) => {
@@ -30,7 +30,7 @@ const RegisterPage = () => {
         {/* Форма записи */}
         <div className="flex justify-center items-center">
           <div className="p-8 bg-white mb-[138px] rounded-lg border border-white dark:border-black shadow-lg  w-[1167px] h-[585px] ">
-            <h1 className="text-black dark:text-white text-2xl font-semibold text-center mb-6">
+            <h1 className="text-black  text-2xl font-semibold text-center mb-6">
               Запишитесь на курсы
             </h1>
             <p className="text-black dark:text-white ml-[257px] mb-[10px] mt-[55px]">
@@ -67,10 +67,9 @@ const RegisterPage = () => {
                 className="ml-[257px]"
                 rules={[{ required: true, message: 'Введите MCHJ(бренд)' }]}
               >
-                <Input
-                  className="bg-gray-200 w-[692px] h-[75px]"
-                  placeholder="MCHJ(бренд)"
-                />
+               <Select>
+                <Option>hello</Option>
+               </Select>
               </Form.Item>
 
               <Form.Item className="text-center">

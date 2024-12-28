@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
@@ -61,40 +62,37 @@ const Navbar = () => {
         </Link>
       </div>
 
+{/* Меню */}
+{/* Меню */}
+<ul className="flex gap-12 text-sm font-semibold">
+  <li className="menu-item">
+    <ScrollLink to="choose-direction" smooth={true} duration={500} className="cursor-pointer">
+      {t("Каталог курсов")}
+    </ScrollLink>
+  </li>
+  <li className="menu-item">
+    <ScrollLink to="online-courses" smooth={true} duration={500} className="cursor-pointer">
+      {t("Онлайн курсы")}
+    </ScrollLink>
+  </li>
+  <li className="menu-item">
+    <ScrollLink to="sales" smooth={true} duration={500} className="cursor-pointer">
+      {t("Скидки")}
+    </ScrollLink>
+  </li>
+  <li className="menu-item">
+    <Link to="company" smooth={true} duration={500} className="cursor-pointer">
+      {t("О нас")}
+    </Link>
+  </li>
+  <li className="menu-item">
+    <Link to="register" smooth={true} duration={500} className="cursor-pointer">
+      {t("Компаниям")}
+    </Link>
+  </li>
+</ul>
 
-      {/* Меню */}
-      <ul className="flex gap-12 hover:[&>li]:underline text-sm font-semibold">
-        <li>
-          <ScrollLink to="choose-direction" smooth={true} duration={500} className="cursor-pointer">
-            {t("Каталог курсов")}
-            
-          </ScrollLink>
-        </li>
-        
-        <li>
-          <ScrollLink to="online-courses" smooth={true} duration={500} className="cursor-pointer">
-            {t("Онлайн курсы")}
-          </ScrollLink>
-        </li>
-        
-        <li>
-          <ScrollLink to="sales" smooth={true} duration={500} className="cursor-pointer">
-            {t("Скидки")}
-          </ScrollLink>
-        </li>
-        
-        <li>
-          <Link to="company" smooth={true} duration={500} className="cursor-pointer">
-            {t("Компаниям")}
-          </Link>
-        </li>
-        
-        <li>
-          <Link to="register" smooth={true} duration={500} className="cursor-pointer">
-            {t("О нас")}
-          </Link>
-        </li>
-      </ul>
+
 
       {/* Переключение языка и темы */}
       <div className="flex items-center gap-4 relative">

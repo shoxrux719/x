@@ -26,73 +26,73 @@ const data = [
     "1 oylik to'lov": "240.033",
   },
   {
-    name: '',
+    name: 'Haad',
     uv: 3000,
     "O'quvchilar soni": 500,
     "1 oylik to'lov": 2210,
   },
   {
-    name: 'Page C',
+    name: 'LC Mohirdev	',
     uv: 2000,
     "O'quvchilar soni": 300,
     "1 oylik to'lov": 2290,
   },
   {
-    name: 'Page D',
+    name: 'Proweb',
     uv: 2780,
     "O'quvchilar soni": 300,
     "1 oylik to'lov": 2000,
   },
   {
-    name: 'Page E',
+    name: 'S.A',
     uv: 1890,
     "O'quvchilar soni": 1000,
     "1 oylik to'lov": 2181,
   },
   {
-    name: 'Page F',
+    name: 'Lets Animate',
     uv: 2390,
     "O'quvchilar soni": 300,
     "1 oylik to'lov": 2500,
   },
   {
-    name: 'Page G',
+    name: 'Ustudy',
     uv: 3490,
     "O'quvchilar soni": 600,
     "1 oylik to'lov": 2100,
   },
   {
-    name: 'Page G',
+    name: 'Astrum',
     uv: 3490,
     "O'quvchilar soni": 2000,
     "1 oylik to'lov": 2100,
   },
   {
-    name: 'Page G',
+    name: 'Tehnikum',
     uv: 3490,
     "O'quvchilar soni": 500,
     "1 oylik to'lov": 2100,
   },
   {
-    name: 'Page G',
+    name: 'Step Academy',
     uv: 3490,
     "O'quvchilar soni": 1500,
     "1 oylik to'lov": 2100,
   },
   {
-    name: 'Page G',
+    name: 'PDP',
     uv: 3490,
     "O'quvchilar soni": 1200,
     "1 oylik to'lov": 2100,
   },
   {
-    name: 'Page G',
+    name: 'Kadirov Dev',
     uv: 3490,
     "O'quvchilar soni": 400,
     "1 oylik to'lov": 2100,
   },
   {
-    name: 'Page G',
+    name: 'IT Academy	',
     uv: 3490,
     "O'quvchilar soni": 2000,
     "1 oylik to'lov": 2100,
@@ -107,10 +107,10 @@ const NumberOfSubscribers = () => {
       <h3 className="text-center text-xl font-bold mb-4">
       Количество учеников 
       учебных центров       </h3>
-      <div style={{ height: 400 }}>
+      <div style={{ height: 400, width: "100%" }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
-            width={500}
+            width={800}
             height={300}
             data={data}
             margin={{
