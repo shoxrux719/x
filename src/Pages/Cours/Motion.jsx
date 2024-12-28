@@ -9,14 +9,14 @@ const Motion = ({ isDarkMode }) => {
       <main>
         {/* Главный баннер */}
         <section className='relative'>
-        <div
-  style={{
-    background: 'linear-gradient(to right, to botttom, #000000, #090924, #240A2F)',
-  }}
-  className="flex h-[600px] items-center gap-[192px] bg-black mx-auto px-4 pl-[119px] text-center animate-fadeInUp container"
->
+          <div
+            style={{
+              background: 'linear-gradient(to right, to botttom, #000000, #090924, #240A2F)',
+            }}
+            className="flex h-[600px] items-center gap-[192px] bg-black mx-auto px-4 pl-[119px] text-center animate-fadeInUp container"
+          >
             <p className='font-medium flex gap-[10px] text-[74.81px] text-left text-white '>
-            Motion <span>Design</span> 
+              Motion <span>Design</span>
             </p>
             <div
               className='bg-cover bg-center w-[864.85px] h-[484.05px] animate-scaleIn'
@@ -31,12 +31,12 @@ const Motion = ({ isDarkMode }) => {
         <section className='bg-purple-600 my-6 ml-[68px] rounded-[17.96px] w-[1300px] h-[228.18px] text-white animate-fadeIn'>
           <div className='mx-auto px-12 container'>
             <h2 className='font-bold text-2xl'>
-            Овладейте новой профессией для старта карьеры в IT.            </h2>
+              Овладейте новой профессией для старта карьеры в IT.            </h2>
             <p className='mt-4'>
-            Motion Design — это направление, открытое человеку с любым профессиональным бэкграундом. Чтобы стать мotion-дизайнером — <br />
-             достаточно быть целеустремленным и иметь время для учебы и прокачки полученных знаний.
+              Motion Design — это направление, открытое человеку с любым профессиональным бэкграундом. Чтобы стать мotion-дизайнером — <br />
+              достаточно быть целеустремленным и иметь время для учебы и прокачки полученных знаний.
             </p>
-            
+
           </div>
         </section>
         <section className='bg-white h-[300px]'>
@@ -45,34 +45,33 @@ const Motion = ({ isDarkMode }) => {
           </p>
           <div className='text-right pr-[145px]'>
             <p className='text-right  pb-6 font-medium text-[17.96px] leading-[26.93px] @apply'>
-            Motion Designer разрабатывает графику для рекламы, телевидения, роликов <br />
-             и заставок на Youtube. Он принимает участие в создании клипов и <br />
+              Motion Designer разрабатывает графику для рекламы, телевидения, роликов <br />
+              и заставок на Youtube. Он принимает участие в создании клипов и <br />
               компьютерных игр. Талантливые специалисты нужны в этой сфере <br />
-               постоянно, поэтому не будет сложностей с трудоустройством.
+              постоянно, поэтому не будет сложностей с трудоустройством.
             </p>
             <p className='text-right font-medium text-[17.96px] leading-[26.93px]; @apply'>
-            Творчество и креатив в повседневных задачах. Здесь ценится <br />
-             нестандартное мышление и оригинальный подход к работе. Вы будете <br />
+              Творчество и креатив в повседневных задачах. Здесь ценится <br />
+              нестандартное мышление и оригинальный подход к работе. Вы будете <br />
               сотрудничать с крупными компаниями, работать с арт-проектами, <br />
-               ежедневно сталкиваться новыми интересными вызовами.
+              ежедневно сталкиваться новыми интересными вызовами.
             </p>
           </div>
         </section>
 
         <section>
           <div>
-            <div className='bg-black'>
+            <div className='bg-[#F6F6F6CC]'>
               <div className='mx-auto container'>
-                <h1 className='font-semibold text-[34.41px] pt-[27px] pl-[122px] pb-[100px] text-left text-white dark:text-black leading-[51.62px]'>
-                Найдите свою  <br />
-                IT Академию
+                <h1 className='font-semibold text-[34.41px] pt-[27px] pl-[122px] pb-[100px] text-left  text-black leading-[51.62px]'>
+                  Найдите свою  <br />
+                  IT Академию
                 </h1>
               </div>
-              <div className='relative mr-auto mb-[165px] ml-auto w-[1200px] m'>
+              <div className='relative mr-auto mb-[165px] h-[1060px] bg-black py-[40px] ml-auto w-[1200px] m'>
                 <p className='pb-6 font-bold text-[40.4px] text-center text-white leading-[48.48px]'>
                   Анализ
                 </p>
-                <img className='w-[1200px] h-[700px]' alt='' />
                 <div>
                   <p className='top-[21px] left-[40%] absolute mb-[38px]'></p>
                   <div className='top-[10%] left-[2%] absolute'>
@@ -98,33 +97,39 @@ const Motion = ({ isDarkMode }) => {
                       <tr>
                         <th className='border-white p-[10px border'>01</th>
                         <th className='border-white border'>
-                          <p>Najot Ta'lim</p>
+                          <Link to={'https://ustudy.uz/oz'}>
+                            <img src="/public/img/USTUDY.png" alt="" />
+                          </Link>
                         </th>
                         <th className='border-white border'>5 месяцев</th>
                         <th className='border-white border'></th>
-                        <th className='border-white border'>2 000 000</th>
+                        <th className='border-white border'>2 500 000</th>
                         <th className='border-white border'></th>
                       </tr>
                       <tr>
                         <th className='border-white p-[10px] border'>02</th>
                         <th className='border-white border text-center'>
-                          <p>PDP Academy</p>
+                          <Link to={'https://najottalim.uz/?srsltid=AfmBOoqm_F2U2MMQRr_aV3xZsOAwCAVapZ0Or7CEZ-G7HrCCO_gRUz0w'}>
+                            <img src="/public/img/NAJOT-TALIM.png" alt="" />
+                          </Link>
                         </th>
                         <th className='border-white border text-center'>
-                          месяцев
+                          6 месяцев
                         </th>
                         <th className='border-white border text-center'>
-                          72 урока
+                          48 урока
                         </th>
                         <th className='border-white border text-center'>
-                          1 500 000
+                          1 350 000
                         </th>
                         <th className='border-white border text-center'></th>
                       </tr>
                       <tr>
-                        <th className='border-white p-[10px] border'>3</th>
+                        <th className='border-white p-[10px] border'>03</th>
                         <th className='border-white border'>
-                          <p>Mohirdev</p>
+                          <Link to="https://mohirdev.uz/">
+                            <img src="/public/img/MOHIRDEV.png" alt="" />
+                          </Link>
                         </th>
                         <th className='border-white border'>3-9 месяцев</th>
                         <th className='border-white border'></th>
@@ -134,51 +139,67 @@ const Motion = ({ isDarkMode }) => {
                       <tr>
                         <th className='border-white p-[10px] border'>04</th>
                         <th className='border-white'>
-                          <p>PROWEB</p>
+                          <Link to="https://proweb.uz/urok/?utm_source=google&utm_source=google&utm_medium=cpa&utm_campaign=search-proweb-main&utm_content=674917148616&utm_term=proweb.uz_b_&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P9u-6kxCTW1iyeF0ZB2aSl1BFLhVP9oKn5QPq-FYnlO5CwIkI9GzjAaAjgcEALw_wcB">
+                            <img src="/public/img/PROWEB.png" alt="" />
+                          </Link>
                         </th>
                         <th className='border-white p-[18px] border'>
-                          10 месяцев
+                          5 месяцев
                         </th>
                         <th className='border-white p-[18px] border'>
-                          80 урока
+                          40 урока
                         </th>
                         <th className='border-white p-[18px] border'>
-                          1 600 000
+                          1 550 000
                         </th>
                         <th className='border-white p-[18px] border'></th>
                       </tr>
                       <tr>
                         <th className='border-white p-[10px] border'>05</th>
                         <th className='border-white border'>
-                          <p>Tehnikum</p>
+                          <Link to="https://astrum.uz/uz">
+                            <img src="/public/img//ASTRUM.png" alt="" />
+                          </Link>
                         </th>
-                        <th className='border-white border'>4 месяцев</th>
+                        <th className='border-white border'>8-12 месяцев</th>
                         <th className='border-white border'>50 уроков</th>
                         <th className='border-white border'></th>
-                        <th className='border-white border'>985 000</th>
+                        <th className='border-white border'>922 833</th>
                       </tr>
+
+
+
+
                       <tr>
                         <th className='border-white p-[10px] border'>06</th>
-                        <th className='border-white p-[20px] border'>Astrum</th>
+                        <th className='border-white  border'>
+                          <Link to="https://lets.uz/">
+                            <img src="/public/img/LETS-ANIMATE.png" alt="" />
+                          </Link>
+
+
+                        </th>
+                        <th className='border-white p-[20px] border'>3 месяцев</th>
                         <th className='border-white p-[20px] border'></th>
-                        <th className='border-white p-[20px] border'></th>
-                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'>2 500 000</th>
                         <th className='border-white p-[20px] border'></th>
                       </tr>
                       <tr>
-                        <th className='p-[10px] border borer-white'>07</th>
-                        <th className='p-[20px] border borer-white'>
-                          Step Academy
+                        <th className='border-white p-[10px] border'>07</th>
+                        <th className='border-white p-[px] border'>
+                          <Link to="https://tashkent.itstep.org/?gad_source=1">
+                            <img src="/public/img/STEP-ACADEMY.png" alt="" />
+                          </Link>
                         </th>
-                        <th className='p-[20px] border borer-white'></th>
-                        <th className='p-[20px] border borer-white'></th>
-                        <th className='p-[20px] border borer-white'></th>
-                        <th className='p-[20px] border borer-white'></th>
+                        <th className='border-white p-[20px] border'>6 месяцев</th>
+                        <th className='border-white p-[20px] border'>48 урока</th>
+                        <th className='border-white p-[20px] border'>1 600 000</th>
+                        <th className='border-white p-[20px] border'></th>
                       </tr>
                       <tr>
                         <th className='border-white p-[10px] border'>08</th>
-                        <th className='border-white p-[20px] border'>
-                          IT Academy
+                        <th className='border-white p-[45px] border'>
+
                         </th>
                         <th className='border-white p-[20px] border'></th>
                         <th className='border-white p-[20px] border'></th>
@@ -187,8 +208,8 @@ const Motion = ({ isDarkMode }) => {
                       </tr>
                       <tr>
                         <th className='border-white p-[10px] border'>09</th>
-                        <th className='border-white p-[20px] border'>
-                          U Study
+                        <th className='border-white p-[45px] border'>
+
                         </th>
                         <th className='border-white p-[20px] border'></th>
                         <th className='border-white p-[20px] border'></th>
@@ -203,7 +224,7 @@ const Motion = ({ isDarkMode }) => {
           </div>
         </section>
 
-<RegistrationForm />
+        <RegistrationForm />
       </main>
 
       {/* Кастомные анимации */}

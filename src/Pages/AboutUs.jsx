@@ -38,7 +38,7 @@ const RegistrationForm = () => {
             <Button
               type="primary"
               htmlType="submit"
-              className="w-[248px] h-[50px] ml-[450px] bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg border-0 hover:opacity-90"
+              className="w-[248px] h-[50px] ml-[450px] bg-slate-900 rounded-full border-8 border-transparent border-purple-500 transition-all duration-300 shadow-[0px_0px_10px_0px_#7744FFB2] text-white  "
             >
               Записаться на курсы
             </Button>
