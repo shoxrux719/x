@@ -1,10 +1,11 @@
 import React from "react";
-import SubscriptionCard from "../components/SubscriptionCard";
+import SubscriptionCard from "../components/CoursePrices";
 import CountOfStudents from "../components/CountOfStudents";
 import WorkingStudents from "../components/WorkingStudents";
 
 import NumberOfSubscribers from "../components/NumberOfSubscribers";
 import ACopy from "../components/A";
+import CoursePrices from "../components/CoursePrices";
 
 const Commpany = () => {
   return (
@@ -12,7 +13,7 @@ const Commpany = () => {
       <h1 className="text-center text-3xl font-bold text-black dark:text-white mb-10">
         Аналитика
       </h1>
-      <SubscriptionCard />
+      <CoursePrices />
       <CountOfStudents />
       <WorkingStudents />
       <CountOfStudents />
