@@ -9,15 +9,15 @@ const Ai = ({ isDarkMode }) => {
       <main>
         {/* Главный баннер */}
         <section className='relative'>
-        <div
-  style={{
-    background: 'linear-gradient(to right, to botttom, #000000, #090924, #240A2F)',
-  }}
-  className="flex h-[600px] items-center gap-[102px] bg-black mx-auto px-4 pl-[119px] text-center animate-fadeInUp container"
->
+          <div
+            style={{
+              background: 'linear-gradient(to right, to botttom, #000000, #090924, #240A2F)',
+            }}
+            className="flex h-[600px] items-center gap-[102px] bg-black mx-auto px-4 pl-[119px] text-center animate-fadeInUp container"
+          >
             <p className='font-medium text-[74px] text-left text- text-white leading-[112.22px]'>
-            DATA SCIENCE
-            И AI
+              DATA SCIENCE
+              И AI
             </p>
             <div
               className='bg-cover bg-center w-[864.85px] h-[484.05px] animate-scaleIn'
@@ -32,13 +32,13 @@ const Ai = ({ isDarkMode }) => {
         <section className='bg-purple-600 my-6 ml-[68px] rounded-[17.96px] w-[1300px] h-[228.18px] text-white animate-fadeIn'>
           <div className='mx-auto px-12 container'>
             <h2 className='font-bold text-2xl'>
-            Анализ больших данных, тестирование и решение задач
+              Анализ больших данных, тестирование и решение задач
             </h2>
             <p className='mt-4'>
-            С учетом стремительного роста внедрения Искусственного Интеллекта в индустрии, специалисты в этой области становятся все более <br />
-             востребованными. Наш курс предлагает не только теоретические знания, но и практические навыки, которые сделают вас <br />
+              С учетом стремительного роста внедрения Искусственного Интеллекта в индустрии, специалисты в этой области становятся все более <br />
+              востребованными. Наш курс предлагает не только теоретические знания, но и практические навыки, которые сделают вас <br />
               конкурентоспособным на рынке труда.            </p>
-           
+
           </div>
         </section>
         <section className='bg-white h-[300px]'>
@@ -47,12 +47,12 @@ const Ai = ({ isDarkMode }) => {
           </p>
           <div className='text-right pr-[145px]'>
             <p className='text-right  pb-6 font-medium text-[17.96px] leading-[26.93px] @apply'>
-            Убирайте беспорядочные данные, выявляйте закономерности и идеи, а также <br />
-             делитесь своими выводами. Эта программа среднего уровня включает в себя <br />
+              Убирайте беспорядочные данные, выявляйте закономерности и идеи, а также <br />
+              делитесь своими выводами. Эта программа среднего уровня включает в себя <br />
               реальные проекты, в которых вы будете выбирать свои собственные наборы <br />
-               данных, исследовательские вопросы и подход к анализу.
+              данных, исследовательские вопросы и подход к анализу.
             </p>
-         
+
           </div>
         </section>
 
@@ -61,8 +61,8 @@ const Ai = ({ isDarkMode }) => {
             <div className='bg-[#F6F6F6CC]'>
               <div className='mx-auto container'>
                 <h1 className='font-semibold text-[34.41px] pt-[27px] pl-[122px] pb-[100px] text-left text-black leading-[51.62px]'>
-                Найдите свою  <br />
-                IT Академию
+                  Найдите свою  <br />
+                  IT Академию
                 </h1>
               </div>
               <div className='relative mr-auto h-[1060px] bg-black py-[40px] mb-[165px] ml-auto w-[1200px] m'>
@@ -72,131 +72,131 @@ const Ai = ({ isDarkMode }) => {
                 <div>
                   <p className='top-[21px] left-[40%] absolute mb-[38px]'></p>
                   <div className='top-[10%] left-[2%] absolute'>
-                     <table className='border-white bg-black mt-[65px] ml-[50px] border text-white'>
-                                          <tr>
-                                            <th></th>
-                                            <th className='border-white p-[20px] border'>
-                                              IT Академии
-                                            </th>
-                                            <th className='border-white p-[20px] border'>
-                                              Длительность курса
-                                            </th>
-                                            <th className='border-white p-[20px] border'>
-                                              Количество уроков
-                                            </th>
-                                            <th className='border-white p-[20px] border'>
-                                              СТОИМОСТЬ ОБУЧЕНИЯ
-                                            </th>
-                                            <th className='border-white p-[20px] border'>
-                                              Рассрочка на 12 месяцов
-                                            </th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px border'>01</th>
-                                            <th className='border-white border'>
-                                            <Link to="https://mohirdev.uz/">
-                                                <img src="/public/img/MOHIRDEV.png" alt="" />
-                                              </Link>
-                                            </th>
-                                            <th className='border-white border'>3-9 месяцев</th>
-                                            <th className='border-white border'></th>
-                                            <th className='border-white border'>3 000 000</th>
-                                            <th className='border-white border'></th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>02</th>
-                                            <th className='border-white border text-center'>
-                                            <Link to="https://proweb.uz/urok/?utm_source=google&utm_source=google&utm_medium=cpa&utm_campaign=search-proweb-main&utm_content=674917148616&utm_term=proweb.uz_b_&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P9u-6kxCTW1iyeF0ZB2aSl1BFLhVP9oKn5QPq-FYnlO5CwIkI9GzjAaAjgcEALw_wcB">
-                                                <img src="/public/img/PROWEB.png" alt="" />
-                                              </Link>
-                                            </th>
-                                            <th className='border-white border text-center'>
-                                              6 месяцев
-                                            </th>
-                                            <th className='border-white border text-center'>
-                                              48  урока
-                                            </th>
-                                            <th className='border-white border text-center'>
-                                              1 525 000
-                                            </th>
-                                            <th className='border-white border text-center'></th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>03</th>
-                                            <th className='border-white border'>
-                                            <Link to="https://tehnikum.school/">
-                                                <img src="/public/img/TEHNIKUM.png" alt="" />
-                                              </Link>
-                                            </th>
-                                            <th className='border-white border'>6 месяцев</th>
-                                            <th className='border-white border'>5- уроков</th>
-                                            <th className='border-white border'></th>
-                                            <th className='border-white border'>1 165 000</th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>04</th>
-                                            <th className='border-white p-[45px] border'>
-                                              
-                                            </th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>05</th>
-                                            <th className='border-white p-[45px] border'>
-                                              
-                                            </th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                          </tr>
-                    
-                    
-                    
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>06</th>
-                                            <th className='border-white p-[45px] border'>
-                                              
-                                            </th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>07</th>
-                                            <th className='border-white p-[45px] border'>
-                                              
-                                            </th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>08</th>
-                                            <th className='border-white p-[45px] border'>
-                                              
-                                            </th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                          </tr>
-                                          <tr>
-                                            <th className='border-white p-[10px] border'>09</th>
-                                            <th className='border-white p-[45px] border'>
-                                              
-                                            </th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                            <th className='border-white p-[20px] border'></th>
-                                          </tr>
-                                        </table>
+                    <table className='border-white bg-black mt-[65px] ml-[50px] border text-white'>
+                      <tr>
+                        <th></th>
+                        <th className='border-white p-[20px] border'>
+                          IT Академии
+                        </th>
+                        <th className='border-white p-[20px] border'>
+                          Длительность курса
+                        </th>
+                        <th className='border-white p-[20px] border'>
+                          Количество уроков
+                        </th>
+                        <th className='border-white p-[20px] border'>
+                          СТОИМОСТЬ ОБУЧЕНИЯ
+                        </th>
+                        <th className='border-white p-[20px] border'>
+                          Рассрочка на 12 месяцов
+                        </th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px border'>01</th>
+                        <th className='border-white border'>
+                          <Link to="https://mohirdev.uz/">
+                            <img src="/public/img/MOHIRDEV.png" alt="" />
+                          </Link>
+                        </th>
+                        <th className='border-white border'>3-9 месяцев</th>
+                        <th className='border-white border'></th>
+                        <th className='border-white border'>3 000 000</th>
+                        <th className='border-white border'></th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>02</th>
+                        <th className='border-white border text-center'>
+                          <Link to="https://proweb.uz/urok/?utm_source=google&utm_source=google&utm_medium=cpa&utm_campaign=search-proweb-main&utm_content=674917148616&utm_term=proweb.uz_b_&gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P9u-6kxCTW1iyeF0ZB2aSl1BFLhVP9oKn5QPq-FYnlO5CwIkI9GzjAaAjgcEALw_wcB">
+                            <img src="/public/img/PROWEB.png" alt="" />
+                          </Link>
+                        </th>
+                        <th className='border-white border text-center'>
+                          6 месяцев
+                        </th>
+                        <th className='border-white border text-center'>
+                          48  урока
+                        </th>
+                        <th className='border-white border text-center'>
+                          1 525 000
+                        </th>
+                        <th className='border-white border text-center'></th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>03</th>
+                        <th className='border-white border'>
+                          <Link to="https://tehnikum.school/">
+                            <img src="/public/img/TEHNIKUM.png" alt="" />
+                          </Link>
+                        </th>
+                        <th className='border-white border'>6 месяцев</th>
+                        <th className='border-white border'>5- уроков</th>
+                        <th className='border-white border'></th>
+                        <th className='border-white border'>1 165 000</th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>04</th>
+                        <th className='border-white p-[45px] border'>
+
+                        </th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>05</th>
+                        <th className='border-white p-[45px] border'>
+
+                        </th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                      </tr>
+
+
+
+                      <tr>
+                        <th className='border-white p-[10px] border'>06</th>
+                        <th className='border-white p-[45px] border'>
+
+                        </th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>07</th>
+                        <th className='border-white p-[45px] border'>
+
+                        </th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>08</th>
+                        <th className='border-white p-[45px] border'>
+
+                        </th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                      </tr>
+                      <tr>
+                        <th className='border-white p-[10px] border'>09</th>
+                        <th className='border-white p-[45px] border'>
+
+                        </th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                        <th className='border-white p-[20px] border'></th>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -204,7 +204,7 @@ const Ai = ({ isDarkMode }) => {
           </div>
         </section>
 
-<RegistrationForm />
+        <RegistrationForm />
       </main>
 
       {/* Кастомные анимации */}

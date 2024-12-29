@@ -46,7 +46,7 @@ const data = [
   {
     name: 'S.A',
     uv: 1890,
-    "O'quvchilar soni": 1000,
+    "O'quvchilar soni": 4000,
     "1 oylik to'lov": 2181,
   },
   {

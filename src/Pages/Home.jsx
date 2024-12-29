@@ -9,6 +9,7 @@ import Discounts from "../components/Discounts";
 import DiscountsRu from "../components/Discounts copy";
 import Navbar from "../components/Navbar";
 import Snowfall from "react-snowfall";
+import PhoneNumberInput from "../components/Phone";
 
 const Home = () => {
     return (
@@ -32,7 +33,8 @@ const Home = () => {
             <section id="RegistrationForm">
                 <RegistrationForm />
             </section>
-        
+
+           
         </div>
     );
 };
