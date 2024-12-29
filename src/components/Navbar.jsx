@@ -44,19 +44,19 @@ const Navbar = () => {
 
       <div className="flex gap-[27px]">
         <Link to="/" smooth={true} duration={500} className="cursor-pointer">
-          <div className="flex items-center gap-9 w-36">
+          <div className="flex items-center gap-2 w-36">
             <img
               src="/img/Group 843.png"
               alt={t("Логотип")}
               className="w-7 h-7"
             />
-            <p className="text-[#664DFF] font-bold text-lg tracking-wide flex items-center">
+            <p className="text-[#664DFF] font-bold text-xl tracking-wide flex items-center">
               <span className="text-black dark:text-white">New.</span>Line
             </p>
             <img
               src="/public/img/santa-hat.png"
               alt="Шапка Санты"
-              className="absolute top-[16px] left-[96px] w-[15px] santa-hat"
+              className="absolute top-[14px] left-[68px] w-[15px] santa-hat"
             />
           </div>
         </Link>
