@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import Discounts from "../components/Discounts";
 import Register from "./AboutUs";
+import RegistrationForm from "./AboutUs";
 
 const Company = ({ isDarkMode }) => {
   return (
@@ -57,7 +58,7 @@ const Company = ({ isDarkMode }) => {
           <div className="w-[275px] h-[395px] bg-[#270A77] p-[18px] rounded-3xl" >
             <img src="/public/img/image 360.png" alt="" />
             <p className="text-xl font-bold leading-8 text-left text-[#C1F009]">Будьте одержимы <br /> результатом</p>
-            <p className="text-[18.05px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
+            <p className="text-[15px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
               действия вокруг наших <br />
               клиентов и учащихся. <br />
               Черпайте мотивацию из <br />
@@ -68,7 +69,7 @@ const Company = ({ isDarkMode }) => {
           <div className="w-[275px] h-[395px] bg-[#270A77] p-[18px] rounded-3xl" >
             <img src="/public/img/image.png" alt="" />
             <p className="text-xl font-bold leading-8 text-left text-[#BA8BF1]">Будьте одержимы <br /> результатом</p>
-            <p className="text-[18.05px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
+            <p className="text-[15px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
               Станьте сторонником <br />
               непрерывного обучения, <br />
               ставьте под сомнение <br />
@@ -81,7 +82,7 @@ const Company = ({ isDarkMode }) => {
           <div className="w-[275px] h-[395px] bg-[#270A77] p-[18px] rounded-3xl" >
             <img src="/public/img/image (1).png" alt="" />
             <p className="text-xl font-bold leading-8 text-left text-[#00B796]">Берите инициативу <br /> на себя</p>
-            <p className="text-[18.05px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
+            <p className="text-[15px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
               Дайте себе и другим <br />
               возможность высказывать  <br />
               свое мнение, принимать <br />
@@ -93,7 +94,7 @@ const Company = ({ isDarkMode }) => {
           <div className="w-[275px] h-[395px] bg-[#270A77] p-[18px] rounded-3xl" >
             <img src="/public/img/image (2).png" alt="" />
             <p className="text-xl font-bold leading-8 text-left text-[#799FF8]">Цените помощь</p>
-            <p className="text-[18.05px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
+            <p className="text-[15px] font-normal leading-[27.07px] text-left text-[#FDFDFD] mb-4">Сосредоточьте наши <br />
               Сотрудничайте c <br />
               сочувствием, уважением и <br />
               доверием. Отмечайте <br />
@@ -105,7 +106,7 @@ const Company = ({ isDarkMode }) => {
 
       </div>
 
-      <div className="flex gap-[67px] ml-[135px] mb-[290px]">
+      <div className="flex gap-[67px] ml-[135px] mb-[60px]">
         <div>
 
           <p className="text-[40.61px] font-bold leading-[48.73px] pt-[63px] pb-[28px]  text-black dark:text-white text-center">Социальное влияние</p>
@@ -127,16 +128,16 @@ const Company = ({ isDarkMode }) => {
           height: '496px',
           backgroundSize: '',
           backgroundPosition: 'center',
-        }} className="grid grid-cols-2 w-[502px] h-[358px] gap-[18px] rounded-[24px] pt-[63px] ">
+        }} className="grid grid-cols-2 w-[200px] h-[358px] gap-[1px] rounded-[24px] pt-[63px] ">
           <div className="w-[242px] h-[170px] bg-[#270a77] rounded-[24px]"><p className="text-[68px] font-bold leading-[81.6px] text-center text-white">14</p><p className="text-[18.05px] font-bold leading-[28.88px] text-center text-white">IT Академии</p></div>
           <div className="w-[242px] h-[170px] bg-[#270a77] rounded-[24px]"><p className="text-[68px] font-bold leading-[81.6px] text-center text-white">8</p><p className="text-[18.05px] font-bold leading-[28.88px] text-center text-white">Направления
             курсов</p></div>
           <div className="w-[242px] h-[170px] bg-[#270a77] rounded-[24px]"><p className="text-[68px] font-bold leading-[81.6px] text-center text-white">14</p><p className="text-[18.05px] font-bold leading-[28.88px] text-center text-white">IT Академии</p></div>
           <div className="w-[242px] h-[170px] bg-[#270a77] rounded-[24px]"><p className="text-[68px] font-bold leading-[81.6px] text-center text-white">14</p><p className="text-[18.05px] font-bold leading-[28.88px] text-center text-white">IT Академии</p></div>
         </div>
-        
       </div>
       
+        <RegistrationForm />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Background } from 'react-parallax';
+
+
 
 const RegisterPage = () => {
   return (
@@ -51,6 +52,7 @@ const RegisterPage = () => {
    </div>
   </section>
 
+  
  
   </div>
     </>

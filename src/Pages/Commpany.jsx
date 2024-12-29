@@ -3,6 +3,8 @@ import SubscriptionCard from "../components/SubscriptionCard";
 import CountOfStudents from "../components/CountOfStudents";
 import WorkingStudents from "../components/WorkingStudents";
 
+import NumberOfSubscribers from "../components/NumberOfSubscribers";
+import ACopy from "../components/A";
 
 const Commpany = () => {
   return (
@@ -15,6 +17,7 @@ const Commpany = () => {
       <WorkingStudents />
       <CountOfStudents />
     </div>
+
   );
 };
 
